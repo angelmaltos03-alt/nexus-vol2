@@ -1,20 +1,21 @@
-# NEXUS Volumen 2 — Apple Design Skill
+# NEXUS Volumen 2 — copia funcional con Apple Design Skill
 
-## Qué contiene
-- `index.html`: copia autónoma del HTML proporcionado, con una capa visual nueva inspirada en los principios de la skill `apple-design`.
-- Conserva el contenido y la lógica JavaScript que venían en el archivo de origen; los cambios visuales se añaden como una capa CSS al final del estilo original.
+## Objetivo
+Esta carpeta contiene una copia independiente de NEXUS Control Tower basada en el HTML fuente proporcionado, con una nueva capa visual inspirada en `apple-design`. La intención es mantener la misma aplicación —mismos módulos, misiones, controles, cálculos, validaciones y reportes que existían en ese archivo— cambiando la presentación visual, no reescribiendo el simulador.
 
-## Principios de diseño aplicados
-- **Claridad:** paleta clara, jerarquía tipográfica y superficies más limpias.
-- **Feedback inmediato:** se mantienen los estados y controles existentes; botones y selecciones tienen estados visuales más evidentes.
-- **Agencia y control:** las decisiones siguen siendo explícitas y reversibles; no se reemplaza la lógica de misiones.
-- **Consistencia espacial:** tarjetas, paneles, formularios y navegación comparten radios, bordes y elevaciones.
-- **Materiales translúcidos:** barras y superficies tipo glass con respaldo opaco cuando se prefiere reducir transparencia.
-- **Accesibilidad:** foco visible, contraste reforzado opcional y respeto a `prefers-reduced-motion`.
-- **Movimiento con propósito:** transiciones breves y discretas, desactivadas si el sistema solicita movimiento reducido.
+## Archivos
+- `index.html`: aplicación autónoma con el HTML y JavaScript de origen y una capa de estilos Apple-inspired.
+- `DESIGN-NOTES.md`: alcance, criterios visuales y límites de las pruebas.
 
-## Importante
-Esta carpeta es una variante independiente. No modifica el repositorio original ni publica nada en GitHub por sí sola. Los datos, cálculos, misiones, reportes y controles corresponden a la copia del HTML fuente; no se ha realizado una prueba integral de todos los flujos en navegador. Antes de reemplazar una versión productiva, valida inicio de sesión, navegación, retos, guardado local y exportación PDF/CSV.
+## Principios visuales aplicados
+- Claridad: tipografía del sistema, jerarquía más limpia y superficies claras.
+- Feedback y agencia: se conservan los controles y estados funcionales existentes, con estados visuales más claros.
+- Consistencia: radios, bordes, espacios y elevaciones compartidos.
+- Materiales translúcidos: superficies tipo glass con alternativas para reducir transparencia.
+- Accesibilidad: foco visible, contraste aumentado opcional y respeto a movimiento reducido.
+- Movimiento con propósito: transiciones breves y respuesta visual al presionar controles.
 
-## Cómo abrir
-Abre `index.html` en un navegador moderno. Para una prueba más representativa, sirve la carpeta con un servidor estático local y comprueba la consola del navegador.
+## Verificación y límites
+La adaptación está planteada como una capa visual sobre el archivo fuente, no como una reconstrucción funcional. Los contadores estáticos del HTML coinciden entre la fuente y la variante: 2 bloques `<script>`, 74 apariciones de `function `, 74 botones y 253 atributos `id=`. Estos conteos ayudan a verificar que la estructura no se haya eliminado, pero **no sustituyen una prueba completa de todos los recorridos interactivos**. La apertura automatizada del navegador no terminó dentro del tiempo disponible, por lo que no afirmo que todos los flujos estén certificados.
+
+La copia no modifica ni publica nada en el repositorio original `Protocolo-Nexus`. Para usarla, abre `index.html` en un navegador moderno. Antes de desplegarla, valida login, navegación, las 3 sesiones, los 24 retos, proveedores, guardado local y exportaciones PDF/CSV.
