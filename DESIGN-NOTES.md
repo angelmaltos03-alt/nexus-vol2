@@ -1,22 +1,9 @@
-# Notas de diseño — NEXUS Apple Design Concept
+# Notas de implementación — NEXUS Volumen 2
 
-## Qué se exploró
-Una dirección visual más calmada y cuidada, inspirada en los principios del skill `apple-design`, sin copiar literalmente el diseño de Apple.
-
-- **Respuesta inmediata:** botones con estados activos, feedback de proveedor y mensajes breves.
-- **Jerarquía:** métricas principales arriba, misiones como siguiente paso y proveedores en un panel propio.
-- **Materiales y profundidad:** superficies translúcidas moderadas para navegación, tarjetas y modal.
-- **Tipografía:** fuentes del sistema, títulos con tracking óptico y tamaños fluidos.
-- **Continuidad espacial:** transiciones cortas, mismo espacio de navegación y modal centrado.
-- **Flexibilidad:** layout responsive y navegación móvil.
-- **Accesibilidad:** foco nativo, `aria-live`, Escape para cerrar modal, y soporte para `prefers-reduced-motion`, `prefers-reduced-transparency` y `prefers-contrast`.
-- **Responsabilidad:** advertencia de maqueta, datos de ejemplo y sin conexión al sitio real.
-
-## Interacciones
-Modal de bienvenida, navegación por cuatro vistas, selector de proveedor con feedback, mensajes toast, CSV de demostración e impresión.
-
-## Límites
-No incluye el motor real de misiones, el registro real de intentos, la validación académica ni la generación real del PDF de NEXUS. Las acciones de exportación están marcadas como demostrativas para evitar confusión.
-
-## Recomendación
-Revisar en escritorio y móvil antes de decidir si se integra algo. Cualquier integración futura debe realizarse en una copia o rama separada, nunca sobrescribiendo directamente la versión publicada.
+- El HTML original se conserva como base para minimizar el riesgo de alterar la lógica de las misiones.
+- La adaptación se concentra en una capa CSS añadida al final del bloque de estilos.
+- Se aplicó una estética clara inspirada en interfaces Apple: tipografía del sistema, fondos neutros, azul de acción, radios amplios, capas translúcidas y sombras contenidas.
+- Se añadieron estilos para estados de foco, interacción táctil, movimiento reducido, transparencia reducida y contraste aumentado.
+- Los módulos que dependen de fotografías conservan superposiciones oscuras para mantener legibilidad del texto.
+- La selección de proveedor, las tablas editables y los campos numéricos tienen estilos específicos para seguir siendo legibles.
+- Esta es una adaptación visual, no una reescritura funcional ni una certificación de accesibilidad.
